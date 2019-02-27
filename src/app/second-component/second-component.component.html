@@ -1,0 +1,14 @@
+<div>
+  <form (submit)="addUser(otro)">
+    <input type="text" #otro>
+    <button type="submit">agregar</button>
+  </form>
+</div>
+<div>
+  <ul>
+    <li *ngFor="let user of users">
+      <app-user [nameUser]="user"></app-user>
+      <button (click)= "deleteUser(user)" >delete</button>
+    </li>
+  </ul>
+</div>

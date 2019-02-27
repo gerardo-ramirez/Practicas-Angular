@@ -1,0 +1,14 @@
+<h4>Mostramos</h4>
+
+<ol>
+  <li><a routerLink="/">Home</a></li>
+  <li><a routerLink="/about">About</a></li>
+
+</ol>
+<ul>
+  <li *ngFor="let ver of posts">
+    <h5>{{ver.title}}</h5>
+    <p>{{ver.body}}</p>
+
+  </li>
+</ul>
